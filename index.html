@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/js-94_l-dmitry94/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Food Boutique</title>
+        <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet" />
+        
+      <script type="module" crossorigin src="/js-94_l-dmitry94/commonHelpers2.js"></script>
+      <link rel="modulepreload" crossorigin href="/js-94_l-dmitry94/assets/vendor-59e0408b.js">
+      <link rel="modulepreload" crossorigin href="/js-94_l-dmitry94/assets/subscription-724d5721.js">
+      <link rel="stylesheet" href="/js-94_l-dmitry94/assets/subscription-5bef7702.css">
+      <link rel="stylesheet" href="/js-94_l-dmitry94/assets/vendor-3dc8c308.css">
+    </head>
+    <body>
+        <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a class="logo" href="./">
+                <span class="logo__button">
+                    <svg class="logo__icon">
+                        <use href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-logo"></use>
+                    </svg>
+                </span>
+                Food Boutique
+            </a>
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="./"> Home </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="./cart-main.html">
+                            <span
+                                class="header__menu-link-button"
+                            >
+                                <svg class="header__menu-link-icon">
+                                    <use href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-cart"></use>
+                                </svg>
+                            </span>
+                            <span class="header__menu-link-counter">
+                                Cart (<span class="cart-quantity header__menu-link-quantity"
+                                    >0</span
+                                >)
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+        <main>
+            <section class="hero">
+    <div class="container">
+        <div class="hero__wrapper">
+            <div class="hero__head">
+                <h1 class="hero__title">
+                    Welcome to the
+                    <span class="hero__title-color">Food</span> Boutique!
+                </h1>
+                <p class="hero__descr">
+                    With Food Boutique, you're not just subscribing to food,
+                    you're signing up for a fresher, fitter, and happier you.
+                </p>
+            </div>
+            <div class="hero__img">
+                <picture>
+                    <source
+                        media="(min-width: 1240px)"
+                        srcset="/js-94_l-dmitry94/assets/hero-desktop-96cdc69f.jpg 1x, /js-94_l-dmitry94/assets/hero-desktop@2x-1809a126.jpg 2x"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="/js-94_l-dmitry94/assets/hero-tab-c73bcd13.jpg 1x, /js-94_l-dmitry94/assets/hero-tab@2x-65116209.jpg 2x"
+                    />
+                    <source
+                        media="(min-width: 320px)"
+                        srcset="/js-94_l-dmitry94/assets/hero-mobile-d47144e6.jpg 1x, /js-94_l-dmitry94/assets/hero-mobile@2x-a85ee055.jpg 2x"
+                    />
+                    <img
+                        class="hero__img-photo"
+                        src="/js-94_l-dmitry94/assets/hero-mobile-d47144e6.jpg"
+                        alt="Food Boutique"
+                    />
+                </picture>
+                <img
+                    class="hero__label"
+                    srcset="data:image/png;base64,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 1x, /js-94_l-dmitry94/assets/organic-food-label@2x-391e7556.png 2x"
+                    src="data:image/png;base64,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"
+                    alt="organic food"
+                />
+            </div>
+        </div>
+    </div>
+</section>
+
+            <section class="products">
+    <div class="container">
+        <div class="products__wrapper">
+            <div class="products__main">
+    <!-- ----------------FILTERS---------------- -->
+    <div class="products__filters">
+        <p class="products__filters-title">Filters:</p>
+        <ul class="products__filters-list">
+            <li class="products__filters-item"> 
+                <form class="products__filters-form">
+                    <input
+                        class="products__filters-input input"
+                        type="search"
+                        name="search"
+                        placeholder="Search for anything"
+                    />
+                    <button class="products__filters-button" type="submit">
+                        <svg class="icon-search">
+                            <use href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+            </li>
+            <li class="products__filters-item">
+                <select
+                    class="products__filters-select input"
+                    name="categories"
+                >
+                    <option selected value="Show All">Categories</option>
+                </select>
+            </li>
+            <li class="products__filters-item">
+                <select class="products__filters-select input" name="sort">
+                    <option selected>A to Z</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ------------- PRODUCT CARDS------------- -->
+        <ul class="cards"></ul>
+
+    <!-- ----------------PAGINATION---------------- -->
+
+    <div id="pagination1" class="tui-pagination"></div>
+</div>
+
+
+
+            <aside class="aside">
+                <section class="popular__products">
+    <h2 class="discount-popular__products">Popular products</h2>
+    <ul class="cards popular__list"></ul>
+</section>
+
+                <section class="discount">
+    <h2 class="discount-popular__products">Discount products</h2>
+    <ul class="discount__list"></ul>
+</section>
+
+            </aside>
+        </div>
+    </div>
+</section>
+
+        </main>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__wrap">
+            <div class="footer__cover-logo-social">
+                <a class="logo" href="./">
+                    <span class="logo__button">
+                        <svg class="logo__icon">
+                            <use href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-logo"></use>
+                        </svg>
+                    </span>
+                    Food Boutique
+                </a>
+
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a
+                            class="footer__social-link"
+                            href="https://www.facebook.com/goITclub/"
+                            target="_blank"
+                        >
+                            <svg class="footer__social-svg">
+                                <use href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a
+                            class="footer__social-link"
+                            href="https://www.instagram.com/goitclub/"
+                            target="_blank"
+                        >
+                            <svg class="footer__social-svg">
+                                <use
+                                    href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-instagram"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a
+                            class="footer__social-link"
+                            href="https://www.youtube.com/c/GoIT"
+                            target="_blank"
+                        >
+                            <svg class="footer__social-svg">
+                                <use href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-yt"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__wrap-wrap">
+                <div class="footer__cover-title-text">
+                    <h2 class="footer__title">
+                        Discover the Variety of Flavors and Quality
+                    </h2>
+                    <p class="footer__text">
+                        An online store where you will find fresh, natural and
+                        delicious products for a healthy life and unforgettable
+                        gastronomic adventures.
+                    </p>
+                </div>
+                <div class="footer__cover-form">
+                    <p class="footer__form-text">
+                        Subscribe and learn about new products!
+                    </p>
+                    <form class="footer__form">
+                        <label class="footer__form-label">
+                            <input
+                                class="footer__form-input"
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                required
+                            />
+                        </label>
+                        <button class="footer__form-submit" type="submit">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer__cover-privacy">
+            <p class="footer__privacy opacity">
+                Food Boutique. All rights reserved.
+            </p>
+            <p class="footer__privacy">
+                Privacy Policy
+                <span class="footer__privacy-slash">/</span> Terms of Service
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+        
+    </body>
+</html>

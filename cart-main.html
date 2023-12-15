@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/js-94_l-dmitry94/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Food Boutique</title>
+        
+      <script type="module" crossorigin src="/js-94_l-dmitry94/commonHelpers.js"></script>
+      <link rel="modulepreload" crossorigin href="/js-94_l-dmitry94/assets/vendor-59e0408b.js">
+      <link rel="modulepreload" crossorigin href="/js-94_l-dmitry94/assets/subscription-724d5721.js">
+      <link rel="stylesheet" href="/js-94_l-dmitry94/assets/vendor-3dc8c308.css">
+      <link rel="stylesheet" href="/js-94_l-dmitry94/assets/subscription-5bef7702.css">
+    </head>
+    <body>
+        <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a class="logo" href="./">
+                <span class="logo__button">
+                    <svg class="logo__icon">
+                        <use href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-logo"></use>
+                    </svg>
+                </span>
+                Food Boutique
+            </a>
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="./"> Home </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="./cart-main.html">
+                            <span
+                                class="header__menu-link-button"
+                            >
+                                <svg class="header__menu-link-icon">
+                                    <use href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-cart"></use>
+                                </svg>
+                            </span>
+                            <span class="header__menu-link-counter">
+                                Cart (<span class="cart-quantity header__menu-link-quantity"
+                                    >0</span
+                                >)
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+        <main>
+            <section class="cart" id="cart">
+    <div class="container">
+        <div class="cart__title-thumb">
+            <button class="cart__button" type="button">
+                <svg class="cart__icon">
+                    <use href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-cart"></use>
+                </svg>
+            </button>
+            <h2 class="cart__title">
+                Cart (<span class="cart-quantity cart__item-count">0</span>)
+            </h2>
+        </div>
+        <div class="cart__wrapper">
+            <div class="cart__desctop-thumb">
+                <div class="cart__added-list">
+                    <button class="cart__delete-button" type="button">
+                        Delete all
+                        <svg class="cart__delete-icon" width="24" height="24">
+                            <use href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cart__products-wrap">
+                <ul class="cart__products"></ul>
+                <div class="total__order-thumb">
+                    <p class="your__order-title">Your Order</p>
+                    <div class="total__price-thumb">
+                        <p class="cart__total-title">Total</p>
+                        <p class="cart__sum">
+                            Sum:
+                            <span class="total__price" id="cart__total"
+                                >0.00</span
+                            >
+                        </p>
+                    </div>
+
+                    <form class="checkout__field">
+                        <label
+                            for="cart__client-email"
+                            class="cart__input-label"
+                        >
+                            <span class="placeholder__prefix">Mail:</span>
+                            <input
+                                class="cart__basket-input"
+                                type="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                id="cart__client-email"
+                                required
+                            />
+                        </label>
+
+                        <button
+                            type="submit"
+                            class="cart__submit-button"
+                            aria-label="Checkout cart"
+                        >
+                            Checkout
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </main>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__wrap">
+            <div class="footer__cover-logo-social">
+                <a class="logo" href="./">
+                    <span class="logo__button">
+                        <svg class="logo__icon">
+                            <use href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-logo"></use>
+                        </svg>
+                    </span>
+                    Food Boutique
+                </a>
+
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a
+                            class="footer__social-link"
+                            href="https://www.facebook.com/goITclub/"
+                            target="_blank"
+                        >
+                            <svg class="footer__social-svg">
+                                <use href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a
+                            class="footer__social-link"
+                            href="https://www.instagram.com/goitclub/"
+                            target="_blank"
+                        >
+                            <svg class="footer__social-svg">
+                                <use
+                                    href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-instagram"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a
+                            class="footer__social-link"
+                            href="https://www.youtube.com/c/GoIT"
+                            target="_blank"
+                        >
+                            <svg class="footer__social-svg">
+                                <use href="/js-94_l-dmitry94/assets/icons-30be3c26.svg#icon-yt"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__wrap-wrap">
+                <div class="footer__cover-title-text">
+                    <h2 class="footer__title">
+                        Discover the Variety of Flavors and Quality
+                    </h2>
+                    <p class="footer__text">
+                        An online store where you will find fresh, natural and
+                        delicious products for a healthy life and unforgettable
+                        gastronomic adventures.
+                    </p>
+                </div>
+                <div class="footer__cover-form">
+                    <p class="footer__form-text">
+                        Subscribe and learn about new products!
+                    </p>
+                    <form class="footer__form">
+                        <label class="footer__form-label">
+                            <input
+                                class="footer__form-input"
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                required
+                            />
+                        </label>
+                        <button class="footer__form-submit" type="submit">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer__cover-privacy">
+            <p class="footer__privacy opacity">
+                Food Boutique. All rights reserved.
+            </p>
+            <p class="footer__privacy">
+                Privacy Policy
+                <span class="footer__privacy-slash">/</span> Terms of Service
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+        
+    </body>
+</html>
